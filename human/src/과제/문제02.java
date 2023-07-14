@@ -16,22 +16,23 @@ public class 문제02 {
 		int sum2 = 0;
 		
 		// 홀수 반복
-		for (int i = 1; i < N; i+=2) {
+		for (int i = 1; i <= N; i+=2) {
 			sum1 += i;
 			System.out.print(i);
-			if( i == N-1 )
+			if( i == N  )
 				System.out.print("=");
 			else
-			System.out.print("+");
+				System.out.print("+");
 			}
 		System.out.println(sum1);
 		
 		// 짝수 반복
+		
 	
 		for (int i = 2; i <= N; i+=2) {
 			sum2 += i;
 			System.out.print(i);
-			if( i == N )
+			if( i == N || i+1 ==N )
 				System.out.print("=");
 			else
 			System.out.print("+");
