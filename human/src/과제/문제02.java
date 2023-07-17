@@ -19,7 +19,7 @@ public class 문제02 {
 		for (int i = 1; i <= N; i+=2) {
 			sum1 += i;
 			System.out.print(i);
-			if( i == N  )
+			if( i == N || i+1 ==N   )
 				System.out.print("=");
 			else
 				System.out.print("+");
