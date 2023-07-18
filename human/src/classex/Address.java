@@ -1,33 +1,47 @@
 package classex;
 
-	public Member() {}
-	public Member(String id,String pwd,Address address) { //Address addres = addr(번지값)
 		
-	}
 public class Address{
 		Address address;
-		private String city,gu,dong;
+		private String city;
+		private String gu;
+		private String dong;
 		
-		public Adress() {
-			
-		public Address(String city,String gu,String dong) {
-			this.city=city;
-			this.gu=gu;
-			this.dong=dong;
-			   
-			
-				
-		public static void main(String[] args) {
-			Address addr = new Address ("서울","영등포구","영등");
-			Member member = new Member("java2","java2",addr);
-			String city = Address.getCity;
-			String gu = Address.getGu
-			String dong = Address.getDong;
-			System.out.println();
-					
+		public Address(){}
+
+		public Address(String city, String gu, String dong) {
+			this.city = city;
+			this.gu = gu;
+			this.dong = dong;
+		}
+
+		public String getCity() {
+			return city;
+		}
+
+		public void setCity(String city) {
+			this.city = city;
+		}
+
+		public String getGu() {
+			return gu;
+		}
+
+		public void setGu(String gu) {
+			this.gu = gu;
+		}
+
+		public String getDong() {
+			return dong;
+		}
+
+		public void setDong(String dong) {
+			this.dong = dong;
+		}
+
+		@Override   //enertation에너테이션 부모로부터 상속받아 구현되었다.
+		public String toString() {
+			return "Address [ city=" + city + ", gu=" + gu + ", dong=" + dong + "]";
 		}
 		
-		
-	}
-
-	}
+}

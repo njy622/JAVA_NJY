@@ -5,12 +5,13 @@ public class Member {
 //	private String		// 가장 폐쇄적이다.
 //	protected String	// 상속 시 부모의 멤버변수
 //	public String  // 접근 범위가 가장 큼
+	private int memberNo;					 	// id, pwd, name,email 한번에 전달
 	private String id;					 	// id, pwd, name,email 한번에 전달
 	private String pwd;			
 	private String name;		
 	private String email;
-	private int age;
 	private Address adress;
+	private Address address;
 	
  
 	public Member() {						//오버로딩(Member 여러번 사용가능) //반환타입이 없다.  
@@ -29,48 +30,24 @@ public class Member {
 		this.id=id;
 		this.pwd=pwd;
 	}
-	public Member(String id,int age) {
-		this.id=id;
-		this.age=age;
-	}
+	
 	// 데이터 타입이 다르고 갯수는 동일하더라도 에러X ex) String 위에는 2개이지만, 아래는 String,int 타입이 다른 2개로 사용가능!)
 
-	public Member(String id,String name,String email) { 
+	public Member(String id,String name,String email,Address addr) { 
 	// 데이터 타입이 같으면 에러 ex) String이 2개 밑에는 3개면 쓸수 있지만 2개 2개면 못씀 
 		this.id=id;
 		this.name=name;
 		this.email=email;
+		this.address=addr;
 	}
-	
-	public Address(String city,String gu,String dong) {
-		this.city=city;
-		this.gu=gu;
-		this.dong=dong;
-		   
-	}
-	
-	
-	public void setCity(String city) {		//private는 누군가를 통해서 접근
-		this.city = city;
-	} 
-	public Address getCity() {
-		return city;
-	}
-	
-	public void setId(String id) {		//private는 누군가를 통해서 접근
-		this.id = id;
-	} 
-	public String getId() {
-		return id;
+	public int getMemberNo() {
+		return memberNo;
 	}
 
-	public void setId(String id) {		//private는 누군가를 통해서 접근
-		this.id = id;
-	} 
-	public String getId() {
-		return id;
+	public void setMemberNo(int MemberNo) {
+		this.memberNo = memberNo;
 	}
-	
+
 	
 	public void setId(String id) {		//private는 누군가를 통해서 접근
 		this.id = id;
@@ -85,8 +62,25 @@ public class Member {
 	public String getPwd() {
 		return pwd;
 	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public void setAddress(Address addr) {
+		this.address = addr;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	
+		
+	@Override
 	public String toString() {
-		return "Member[id="+id+"[pwd="+pwd;
+		return "Member [memberNo=" + memberNo + ",id=" + id + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", address=" + address + "]";
 	}
 	
 	// 주소는 집합체
