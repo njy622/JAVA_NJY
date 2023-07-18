@@ -26,15 +26,18 @@ import java.util.Scanner;
 				break;
 				
 				case 3 : 
-					System.out.println("회원삭제");
+					Memberservice.deleteData();
+//					System.out.println("회원삭제");
 				break;
 				
 				case 4 : 
-					System.out.println("회원변경");
+					Memberservice.upData();
+//					System.out.println("회원변경");
 				break;
 				
 				case 5 : 
-					System.out.println("전체조회");
+					Memberservice.totalData();
+//					System.out.println("전체조회");
 				break;
 				
 				case 6:

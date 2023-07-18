@@ -64,7 +64,7 @@ public class Memberservice {
 	
 	}
 
-		public static void deleteata() {
+		public static void deleteData() {
 			System.out.println("회원삭제");
 			
 			System.out.println("삭제할 회원 번호: ");
@@ -88,9 +88,31 @@ public class Memberservice {
 		System.out.print("수정할 회원 번호: ");
 		int memberNo = sc.nextInt();
 		sc.nextLine();
+		if (check(memberNo)) {
+			return;
+		}
+		if(memberList[memberNo-1]==null) {
+			System.out.println("등록된 회원이 존재하지 않습니다.");
+		return;
+		}
+		System.out.println("## 회원정보 변경");
+		Member member = inputdata();
+		
+		String updataId = member.getId();
+		String updataPwd = member.getPwd();
+		
+		memberList[memberNo-1].setId(updataId);
+		memberList[memberNo-1].setPwd(updataPwd);
+		System.out.println("# 회원정보가 변경되었습니다.");
+		
 		
 	}
-	
+
+	private static Member inputdata() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public static void totalData() {
 	System.out.println("#회원 관리 목록");
 	for (Member member : memberList) {
