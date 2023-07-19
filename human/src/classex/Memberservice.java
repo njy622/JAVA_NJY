@@ -32,6 +32,7 @@ public class Memberservice {
 		else {
 			System.out.println("회원 목록이 꽉찼습니다.");
 		}
+	
 	}
 	
 	public static int getIndex() {
