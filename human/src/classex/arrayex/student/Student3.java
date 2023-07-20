@@ -49,49 +49,67 @@ public class Student3 {
 	// 챠트 출력 → outputBarChart();
 	// }
 	
-	// 입력
-		
-		int arr[] = {87,68,94,100,83,78,85,91,76,87};
-		int sum=0;
-		int avg=0;
-		int max = arr[0];
-		int min = arr[0];
-		
-			
-	// 계산
-	public void  Score() {
-		
-		
-		for (int i = 0; i < arr.length; i++) {
-			sum+= arr[i];
-			if(max<arr[i]) max=arr[i];
-			if(min>arr[i]) min=arr[i];
-		}
-		avg = sum/arr.length;
-		System.out.println("과목평균 : "+ avg + "\n최저점수 : "+min + "\n최고점수 : "+max);
-	}
-	
-		
-	//출력
-	public void PrintGrade() {
-	for (int i = 0; i < arr.length; i++) {
-		System.out.println("학생 "+(i+1)+" : "+ arr[i]);
-		
-	}
-	}
-		
-	
-	
 	public static void main(String[] args) {
-		Student3 st = new Student3();					//인스턴스 생성먼저(객체. 메소드명)!!! 일단 생성하기전 객체를 먼저 파악하자!!!!
-													// 학생이면 가방을 가지고 있다 교복을 입는다 몇학년이다. 정보를 가지고 있는걸 학생이라고 한다.
-		st.PrintGrade();
-		System.out.println("========================");
-		st.Score();
-		System.out.println("\n 점수분포 : ");
-		st.Chart();
+		ArrayChart ac = new ArrayChart();				
+		
 	}
 	
+	public void displayMessage() {
+		System.out.println("Java Programming");
+	
+	}
+	
+	
+	public void ProcessGrade() {
+		//배열 초기값 선언
+		int[] arr = {87,68,94,100,83,78,85,91,76,87}
+		
+		//학생점수 출력
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("학생 "+ (i+1)+ " : " + arr[i]);
+		//평균, 최저, 최고
+		
+		}
+		
+		public void getAverage() {
+			int sum = 0;
+			double avg = 0;
+			int max = arr[0];
+			int min = arr[0];
+			
+			for (int i = 0; i < arr.length; i++) {
+				sum += arr[i];
+			
+			avg = sum/arr.length;
+			System.out.println("과목평균 : "+ avg);
+			
+			public void getMaximum() {
+				for (int j = 0; j < arr.length; j++) {
+					if (max<arr[i]) 
+						max=arr[i];
+					if (min>arr[i]) 
+						min=arr[i];
+				}
+				System.out.println("최저점수 : "+min);
+				System.out.println("최고점수 : "+max);
+				
+				}
+			
+				}
+			public void outputBarDhart();
+			for (int i = 0; i < arr.length; i++) {
+				for (int j = -(i-1); j < arr.length; j++) {
+					System.out.println(i+"-"+j +" : ");
+			}
+			
+			}
+		}
+		
+		
+		
+			 
+	
+}
 }
 	
 
