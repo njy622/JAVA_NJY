@@ -51,7 +51,10 @@ public class Student3 {
 	
 	public static void main(String[] args) {
 		ArrayChart ac = new ArrayChart();				
-		
+		ac.displayMessage();
+	    ac.processGrades();
+
+
 	}
 	
 	public void displayMessage() {
@@ -62,16 +65,19 @@ public class Student3 {
 	
 	public void ProcessGrade() {
 		//배열 초기값 선언
-		int[] arr = {87,68,94,100,83,78,85,91,76,87}
 		
+		int arr[] = {87,68,94,100,83,78,85,91,76,87};
+		
+		//평균, 최저, 최고
+		
+	
 		//학생점수 출력
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("학생 "+ (i+1)+ " : " + arr[i]);
-		//평균, 최저, 최고
-		
+		}
 		}
 		
-		public void getAverage() {
+		public float getAverage(int arr[]) {
 			int sum = 0;
 			double avg = 0;
 			int max = arr[0];
@@ -83,7 +89,7 @@ public class Student3 {
 			avg = sum/arr.length;
 			System.out.println("과목평균 : "+ avg);
 			
-			public void getMaximum() {
+			public void getMaximum(arr) {
 				for (int j = 0; j < arr.length; j++) {
 					if (max<arr[i]) 
 						max=arr[i];
@@ -102,6 +108,20 @@ public class Student3 {
 					System.out.println(i+"-"+j +" : ");
 			}
 			
+				public void main(String[] args) {
+					int[] arr = {87,68,94,100,83,78,85,91,76,87};
+					Scanner sc = new Scanner(System.in);
+					int N=1;
+					System.out.print("80-89 : ");
+					
+					public void
+					for (int i = 0; i < arr.length; i++) {
+						if(arr[i]>=80 && arr[i]<90) {
+							arr[i] = N;
+							N = arr.length;
+						for (int j = 0; j < N/10; j++) {
+							System.out.print("*");
+					}
 			}
 		}
 		
@@ -111,6 +131,10 @@ public class Student3 {
 	
 }
 }
+		}
+	}
+}
+
 	
 
 	

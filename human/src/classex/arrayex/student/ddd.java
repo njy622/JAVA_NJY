@@ -1,24 +1,38 @@
 package classex.arrayex.student;
 
-import java.util.Scanner;
 
 public class ddd {
+	
+	
 	public static void main(String[] args) {
 		int[] arr = {87,68,94,100,83,78,85,91,76,87};
-		Scanner sc = new Scanner(System.in);
-		int N =0;
-	
+		String[] num = new String[11];
 		
-		for (int i = 0; i < arr.length; i++) {
-			if(arr[i]>=80 && arr[i]<90)
-				N = arr[i].length;
+		for (int i = 0; i < num.length; i++) {
+			num[i] = (i*10) + "-" + (i*10+9) + ":";
 		}
-		for (int i = 0; i < N; i++) {
-			System.out.print("*");
-		}
+		num[10] = "100 : "; 
 		
-		System.out.println();
+		int N=0;
+		
+//		System.out.print("70-79 : ");
+		
+		for (int i = 0; i <= 100; i+=10) {
+//			if(arr[i]>=70 && arr[i]<79) {
+//				arr[i] = N;
+//				N = arr.length/10;
+			
+			for (int j = 0; j < 10; j++) {
+				if(arr[j] >= i && arr[j] <= i+9) {
+					num[i/10] += "*";
+		}
+			
+		}
+		}
 
+		for (int i = 0; i < 11; i++) {
+			System.out.println(num[i]);
 		}
+		}
+}
 		
-	}
