@@ -1,4 +1,4 @@
-package classex.arrayex;
+package Day9_13.ArrayEx;
 
 public class ArrayTest96 {
 	public static void main(String[] args) {

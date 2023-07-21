@@ -1,4 +1,4 @@
-package classex.arrayex;
+package Day9_13.ArrayEx;
 
 import java.util.Iterator;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package classex.arrayex.student;
+package Day9_13.ArrayEx.student;
 
 public class ArrayChart {
 	public static void main(String[] args) {

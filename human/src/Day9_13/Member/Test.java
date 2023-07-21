@@ -1,11 +1,11 @@
-package classex.membertest;
+package Day9_13.Member;
 
 import classex.Memberservice;
 
 
 	public class Test{
 		public void memberInfo() {
-			Memberservice.inputData();
+			MemberService.inputData();
 			
 		}
 		public static void main(String[] args) {
@@ -14,7 +14,7 @@ import classex.Memberservice;
 		}
 
 		public void memberInfo2() {
-			Memberservice.searchData();
+			MemberService.searchData();
 		Test test2 = new Test();
 		test2.memberInfo2();
 		}

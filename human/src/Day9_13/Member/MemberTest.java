@@ -1,4 +1,4 @@
-package classex.membertest.NJY;
+package Day9_13.Member;
 
 import java.util.Scanner;
 

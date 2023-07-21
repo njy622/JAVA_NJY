@@ -1,4 +1,4 @@
-package classex.arrayex.student.test;
+package Day9_13.ArrayEx.student.test;
 
 import java.util.Scanner;
 
@@ -49,6 +49,7 @@ public class StudentScore {
 //	}
 //	
 //}
+	
 	public int sum() {
 	sum = this.kor+this.math;   // int sum(지역변수) (속성선언 안되었음?)
 	return sum;

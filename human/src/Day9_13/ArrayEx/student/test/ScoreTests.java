@@ -1,4 +1,4 @@
-package classex.arrayex.student.test;
+package Day9_13.ArrayEx.student.test;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package classex;
+package Day9_13.Member;
 // dto(data transfer objec), vo(value object)
 public class Member {				
 
@@ -10,8 +10,6 @@ public class Member {
 	private String pwd;			
 	private String name;		
 	private String email;
-	private Address adress;
-	private Address address;
 	
  
 	public Member() {						//오버로딩(Member 여러번 사용가능) //반환타입이 없다.  
@@ -33,19 +31,11 @@ public class Member {
 	
 	// 데이터 타입이 다르고 갯수는 동일하더라도 에러X ex) String 위에는 2개이지만, 아래는 String,int 타입이 다른 2개로 사용가능!)
 
-	public Member(String id,String name,String email,Address addr) { 
+	public Member(String id,String pwd,String email) { 
 	// 데이터 타입이 같으면 에러 ex) String이 2개 밑에는 3개면 쓸수 있지만 2개 2개면 못씀 
 		this.id=id;
-		this.name=name;
+		this.pwd=pwd;
 		this.email=email;
-		this.address=addr;
-	}
-	public int getMemberNo() {
-		return memberNo;
-	}
-
-	public void setMemberNo(int MemberNo) {
-		this.memberNo = memberNo;
 	}
 
 	
@@ -70,18 +60,20 @@ public class Member {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public void setAddress(Address addr) {
-		this.address = addr;
-	}
-	public Address getAddress() {
-		return address;
-	}
 	
 		
+//	@Override
+//	public String toString() {
+//		return "Member [id=" + id + ", pwd=" + pwd + ", name=" + name + ", email=" + email + "]";
+//	}
 	@Override
 	public String toString() {
-		return "Member [memberNo=" + memberNo + ",id=" + id + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", address=" + address + "]";
+		return "Member [id=" + id + ", pwd=" + pwd + ", email=" + email + "]";
 	}
+	public  void printMember() {
+		System.out.println("ID:"+id);
+		System.out.println("PWD:"+pwd);
+		System.out.println("EMAIL:"+email);	}
 	
 	// 주소는 집합체
 	// Member은 주소를 가진다    = 홍길동은 주소를 가지고 있다(포함관계/상속관계XX)
