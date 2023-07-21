@@ -49,13 +49,7 @@ public class Student3 {
 	// 챠트 출력 → outputBarChart();
 	// }
 	
-	public static void main(String[] args) {
-		ArrayChart ac = new ArrayChart();				
-		ac.displayMessage();
-	    ac.processGrades();
 
-
-	}
 	
 	public void displayMessage() {
 		System.out.println("Java Programming");
@@ -75,7 +69,8 @@ public class Student3 {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("학생 "+ (i+1)+ " : " + arr[i]);
 		}
-		}
+	}
+		
 		
 		public float getAverage(int arr[]) {
 			int sum = 0;
@@ -88,7 +83,8 @@ public class Student3 {
 			
 			avg = sum/arr.length;
 			System.out.println("과목평균 : "+ avg);
-			
+			}
+		
 			public void getMaximum(arr) {
 				for (int j = 0; j < arr.length; j++) {
 					if (max<arr[i]) 
@@ -101,39 +97,40 @@ public class Student3 {
 				
 				}
 			
-				}
-			public void outputBarDhart();
-			for (int i = 0; i < arr.length; i++) {
-				for (int j = -(i-1); j < arr.length; j++) {
-					System.out.println(i+"-"+j +" : ");
-			}
+			public void outputBarDhart(int arr[]){
+			String[] num = new String[11];
 			
-				public void main(String[] args) {
-					int[] arr = {87,68,94,100,83,78,85,91,76,87};
-					Scanner sc = new Scanner(System.in);
-					int N=1;
-					System.out.print("80-89 : ");
-					
-					public void
-					for (int i = 0; i < arr.length; i++) {
-						if(arr[i]>=80 && arr[i]<90) {
-							arr[i] = N;
-							N = arr.length;
-						for (int j = 0; j < N/10; j++) {
-							System.out.print("*");
-					}
+			for (int i = 0; i < num.length; i++) {
+				num[i] = (i*10) + "-" + (i*10+9) + ":";
 			}
-		}
-		
+			num[10] = "100 : "; 
+			
+			int N=0;
+			
+//			System.out.print("70-79 : ");
+			
+			for (int i = 0; i <= 100; i+=10) {
+//				if(arr[i]>=70 && arr[i]<79) {
+//					arr[i] = N;
+//					N = arr.length/10;
+				
+				for (int j = 0; j < 10; j++) {
+					if(arr[j] >= i && arr[j] <= i+9) {
+						num[i/10] += "*";
+			}
+				
+			}
+			}
+
+			for (int i = 0; i < 11; i++) {
+				System.out.println(num[i]);
+			}
+			}
+	}
 		
 		
 			 
 	
-}
-}
-		}
-	}
-}
 
 	
 
