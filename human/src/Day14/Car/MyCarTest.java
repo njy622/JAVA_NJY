@@ -4,7 +4,7 @@ public class MyCarTest {
 
 	public static void main(String[] args) {
 		Car myCar = new Car("스파크", "검은색", 995, 60); // 인스턴스는 생성과 동시에 할 수 있다
-//		myCar = new Car();   			// 동시에 안하면 주석단 것처럼 써야함
+//		myCar = new Car();   			// 동시에 안하면 주석처럼 써야함
 //		myCar.setCarName("스파크");
 //		myCar.setCarColor("화이트");
 //		myCar.setCarSize(995);

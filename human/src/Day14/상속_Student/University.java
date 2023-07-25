@@ -16,4 +16,9 @@ public class University extends Student{
 	public int getCourses() {
 		return courses;
 	}
+	//오버라이드
+	public String getStudInfo() { // 학생의 신상정보를 출력해주는 메소드
+		System.out.println("Student 클래스의 getStudlnfo() 호출");
+		return "이름 : " +name + ", 학년 : " + grade+", 학점 : "+getCourses();
+	}
 }
