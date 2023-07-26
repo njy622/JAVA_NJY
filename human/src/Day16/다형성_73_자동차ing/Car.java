@@ -1,4 +1,4 @@
-package Day15.다형성_73_자동차;
+package Day16.다형성_73_자동차ing;
 
 public class Car {
 	protected String carName;
@@ -7,11 +7,11 @@ public class Car {
 	
 	public void speedUp(int velocity) {
 		if(velocity>0)
-		velocity +=0;
+		velocity +=1;
 	}
 	public void speedDown(int velocity) {
 		if(velocity>0)
-			velocity-=0;
+			velocity-=1 ;
 	}
 	public void stop(int velocity) {
 		if(velocity<0)
