@@ -1,4 +1,4 @@
-package 과제;
+package Day17;
 
 import java.util.Scanner;
 
