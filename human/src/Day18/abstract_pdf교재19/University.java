@@ -1,17 +1,25 @@
 package Day18.abstract_pdf교재19;
 
-public class University implements Student1 {
+public class University extends Student {
 
-	String name;
+	private int courses;
+	public University(String name, int grade, int courses, String teacher) {
+		super(name,grade,teacher);
+		System.out.println("University 생성자 호출");
+		this.courses = courses;
+	}
+	
+	public String getStudeInfo() {
+		System.out.println("University 클래스의 getStudInfo 메소드 호출");
+		return "이름 : " + name + ", 학년 : "+grade+ ", 신청학점 : "+courses;
+				
+	}
 	
 	@Override
-	public void getStudInfo() {
-		System.out.println("학생 이름: "+ name);
+	public String getTeacher() {
+		return "지도 교수님 : " + super.teacher;
 	}
-
-	@Override
-	public void getTeacher() {
-		System.out.println("지도 교수님 : "+ name);
-	}
+	
+	
 	
 }
