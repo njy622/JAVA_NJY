@@ -1,4 +1,4 @@
-package 이것이자바다.예외;
+package Day17.이것이자바다.예외;
 
 import java.util.Scanner;
 

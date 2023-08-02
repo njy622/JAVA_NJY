@@ -1,4 +1,4 @@
-package 이것이자바다.예외;
+package Day17.이것이자바다.예외;
 
 public class Q432_TryCatchFinallyEx {
 	
