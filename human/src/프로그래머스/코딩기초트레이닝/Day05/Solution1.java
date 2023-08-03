@@ -1,6 +1,6 @@
 package 프로그래머스.코딩기초트레이닝.Day05;
 
-public class Solution {
+public class Solution1 {
 	
 	public String solution(String code) {
         String answer = "";

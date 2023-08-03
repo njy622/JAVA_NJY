@@ -11,5 +11,9 @@ public class Q1 {
 		}
         return answer;
 			}
-
+    public static void main(String[] args) {
+		Q1 s = new Q1();
+		
+		System.out.println(s.solution("aaaaa","bbbbb"));
+	}
 }
