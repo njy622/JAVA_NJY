@@ -1,0 +1,13 @@
+package ㄴ_자바_손정대강사님.Day17.예외.throwsNew_user;
+
+public class ScoreTest {
+
+	public static void main(String[] args) {
+		//int score = 89;
+		int score= 120;
+		ScoreUtil t = new ScoreUtil();
+		
+		score=t.calcScore(score);
+		System.out.println("입력한 점수는: "+t);
+	}
+}

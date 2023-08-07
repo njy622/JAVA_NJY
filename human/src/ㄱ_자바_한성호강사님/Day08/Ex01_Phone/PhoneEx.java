@@ -1,0 +1,14 @@
+package ㄱ_자바_한성호강사님.Day08.Ex01_Phone;
+
+public class PhoneEx {
+	
+	public static void main(String[] args) {
+		
+		SmartPhone smartPhone = new SmartPhone("user");
+		
+		smartPhone.turnOn();
+		smartPhone.internetSearch();
+		smartPhone.turnOff();
+	}
+
+}
